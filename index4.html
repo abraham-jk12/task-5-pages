@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Vertical Navigation Bar */
+    .vertical-nav {
+      width: 200px;
+      background-color: lightblue;
+      border: 1px solid #ccc;
+      float: left;
+      margin-right: 90px;
+    }
+
+    .vertical-nav h3 {
+      text-align: center;
+    }
+
+    .vertical-nav a {
+      display: block;
+      color: blue;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-nav a:first-child {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+
+    .vertical-nav a:hover {
+      background-color: #ddd;
+    }
+
+    /* Horizontal Navigation Bar */
+    .horizontal-nav {
+      border: 1px solid #ccc;
+      width :fit-content;
+      margin-left:0px;
+      display:flex;
+    }
+
+    .horizontal-nav h3 {
+      text-align: center;
+    }
+
+    .horizontal-nav a {
+      color: blue;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-right: 1px solid #ccc;
+      background-color: #eee;
+    }
+
+    .horizontal-nav a:first-child {
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+    }
+
+    .horizontal-nav a:hover {
+      background-color: #ddd;
+    }
+
+    /* Clear floats */
+    .clear {
+      clear: both;
+    }
+
+    /* Container styling */
+    .container {
+      padding: 20px;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Vertical Navigation -->
+    <div class="vertical-nav">
+      <a href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML</a>
+      <a href="#">Bootstrap</a>
+    </div>
+
+    <!-- Horizontal Navigation -->
+    <div class="horizontal-nav">
+      <a href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+</body>
+</html>
